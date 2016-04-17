@@ -12,12 +12,12 @@ Desafio:
 
 - [x] Bluemix
 - [ ] GS1
-- [x] Social
+- [ ] Social
 
 Participantes:
 
 - Natanael Guerra
 - Pablo Calvalcante
-- Pedro 
+- Pedro Paulo
 - Raul Brito
 - Victor Debone
