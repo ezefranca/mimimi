@@ -1,0 +1,42 @@
+<ion-view view-title="Main" name="main-view">
+    <ion-content class="bg-main-color" id="main-content" overflow-scroll="true" ng-click="closePostOptions">
+		<div class="main-container">
+			<h1 class="text-center">Larga de mimimi...</h1>
+		</div>
+		<div class="col text-center">
+			<i class="{{plus}} plus-icon white text-center center" ng-click="openPostOptions({{closed}})"></i>
+		</div>
+		<div class="options-container row text-center white {{showOptions}}">
+			<div class="col">.col</div>
+			<div class="col">.col</div>
+		</div>
+	</ion-content>
+	<ion-content class="bg-main-color" id="main-content" overflow-scroll="true" ng-click="closePostOptions()">
+		<div class="main-container">
+			<h1 class="text-center">Larga de mimimi...</h1>
+		</div>
+		<div class="col text-center">
+			<i class="{{plus}} plus-icon white text-center center" ng-click="openPostOptions({{closed}})"></i>
+		</div>
+		<div class="options-container row text-center white {{showOptions}} {{slide}}">
+			<ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+				<ion-slide>
+					<div class="row">
+						<div class="col" ng-click="openTextInput()"><i class="ion-ios-compose-outline"></i><br>Escreva</div>
+						<div class="col"><i class="ion-ios-mic-outline"></i><br>Fale</div>
+					</div>
+				</ion-slide>
+				<ion-slide>
+				  <div class="row">
+					<div class="bar bar-header item-input-inset">
+					  <label class="item-input-wrapper">
+						<input type="search" placeholder="Escreva algo que faça sentido...">
+					  </label>
+					</div>
+				  </div>
+				</ion-slide>
+			</ion-slide-box>
+		</div>
+	</div>
+	</ion-content>
+</ion-view>

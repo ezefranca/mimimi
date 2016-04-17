@@ -1,0 +1,48 @@
+<ion-view view-title="Main" name="main-view">
+	<ion-content class="bg-main-color" id="main-content" overflow-scroll="false" locking="false" ng-click="closePostOptions()">
+		<div ng-repeat="choro in choros">
+			<div class="options-container chora-container row white text-right {{showChoro}}">
+				<div class="row responsive-sm">
+				  <div class="col no-margin-bottom choro-label">Seu mimimi:</div>
+				  <div class="col no-margin-bottom no-padding-top"><b>{{choro.choro}}</b></div>
+				</div>
+			</div>
+			<div class="answer-container white text-left {{showAnswer}}">
+				<div class="row responsive-sm">
+					<div class="col no-padding-bottom no-margin-bottom"><b>Chupeta 2000 diz:</b></div>
+					<div class="col no-padding-top no-padding-bottom no-margin-bottom">{{choro.answer}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-container ng-{{showLogo}}">
+			<div class="app-icon"></div>
+			<h1 class="text-center">mimimi</h1>
+		</div>
+		<div class="col text-center">
+			<i class="{{plus}} ng-{{visibility}} plus-icon white text-center center" ng-click="openPostOptions({{closed}})"></i>
+		</div>
+		<div class="options-container row text-center white {{showOptions}} {{slide}}">
+			<ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+<!--				<ion-slide>-->
+<!--					<div class="row">-->
+<!--						<div class="col" ng-click="openTextInput()"><i class="ion-ios-compose-outline"></i><br>Chore</div>-->
+<!--						<div class="col"><i class="ion-ios-mic-outline"></i><br>Fale</div>-->
+<!--					</div>-->
+<!--				</ion-slide>-->
+				<ion-slide>
+				  <div class="row">
+					<div class="bar bar-header item-input-inset">
+					  <label class="item-input-wrapper">
+						<input type="search" placeholder="Coloque aqui seu mimimi" ng-model="searchData.text" class="white">
+					  </label>
+					  <button class="button button-clear white ion-chevron-right icon-right" ng-click="search(searchData)">
+						Chorar
+					  </button>
+					</div>
+				  </div>
+				</ion-slide>
+			</ion-slide-box>
+		</div>
+	</div>
+	</ion-content>
+</ion-view>

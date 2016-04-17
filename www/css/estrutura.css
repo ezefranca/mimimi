@@ -1,0 +1,73 @@
+.center{
+	margin: 0 auto;
+}
+
+.text-center{
+	text-align: center;
+}
+
+ion-side-menu-content ion-nav-bar{
+	display: none;
+}
+
+#main-content{
+	background-image: url('../img/fundo-blur-splash-mimi.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 0;
+}
+
+h1{ 
+	color: #fff;
+	font-weight: 300;
+	margin-top: 18rem !important;
+}
+
+.plus-icon{
+	font-size: 2rem;
+}
+
+.options-container{
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 6px;
+	margin: 1rem auto;
+	overflow: overlay;
+	transition: all 0.4s ease;
+	width: 90%;
+}
+
+.options-container i{
+	font-size: 2.5rem;
+}
+
+.options-container.hide-options{
+	max-height: 0;
+	padding: 0 0;
+}
+
+.options-container.show-options{
+	max-height: 100px;
+}
+
+.options-container.show-options.slide-2, .options-container.show-options.slide-3{
+	max-height: 75px;
+}
+
+.slider{
+	max-height: 80px !important;
+}
+
+.bar-header{
+	background: transparent;
+	padding-top: 0;
+}
+
+.item-input-wrapper{
+	background: rgba(255, 255, 255, 0.3);
+	margin-top: 0 !important;
+}
+
+::-webkit-input-placeholder {
+    color: #fff !important;
+}
