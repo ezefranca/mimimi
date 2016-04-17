@@ -2,11 +2,11 @@
 
 Nome do projeto: **mimimi**
 
-Categoria: **app**
+Categoria: **app,entretenimento**
 
 Público-alvo: **Jovens, geração-y**
 
-Proposta de valor única: **App para as reclamações banais do dia**
+Proposta de valor única: **Onde seu mimimi é recebido com carinho, toda pessoa que tem um murmúrio sufocado merecia ser ouvida.**
 
 Desafio: 
 
